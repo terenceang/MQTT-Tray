@@ -1,0 +1,32 @@
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\MQTT Tray.exe.config
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\MQTT Tray.exe
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\MQTT Tray.pdb
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT_Tray.Form1.resources
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT_Tray.Properties.Resources.resources
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.GenerateResource.cache
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.CoreCompileInputs.cache
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.exe
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.pdb
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\Microsoft.Win32.Primitives.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\MQTTnet.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\OpenNETCF.Extensions.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.AppContext.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Console.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Globalization.Calendars.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.IO.Compression.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.IO.Compression.ZipFile.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.IO.FileSystem.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.IO.FileSystem.Primitives.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Net.Http.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Net.Sockets.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Algorithms.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Encoding.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Primitives.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Xml.ReaderWriter.dll
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.CopyComplete
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csprojAssemblyReference.cache
+d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT_Tray.Form2.resources
