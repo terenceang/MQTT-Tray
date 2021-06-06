@@ -30,3 +30,41 @@ d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\bin\Debug\System.Di
 d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.CopyComplete
 d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT Tray.csprojAssemblyReference.cache
 d:\documents\Visual Studio 2017\Projects\MQTT Tray\MQTT Tray\obj\Debug\MQTT_Tray.Form2.resources
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTT Tray.exe.config
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTT Tray.exe
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTT Tray.pdb
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTTnet.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\OpenNETCF.Extensions.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.AppContext.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Console.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.IO.Compression.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.IO.FileSystem.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Net.Http.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Net.Sockets.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.AssemblyReference.cache
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT_Tray.Form1.resources
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT_Tray.Form2.resources
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT_Tray.Properties.Resources.resources
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.GenerateResource.cache
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.CoreCompileInputs.cache
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.csproj.CopyComplete
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.exe
+C:\Users\teren\Source\Repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.pdb
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTT Tray.exe.manifest
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\MQTT Tray.application
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.exe.manifest
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\obj\Debug\MQTT Tray.application
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\Newtonsoft.Json.dll
+C:\Users\teren\source\repos\terenceang\MQTT-Tray\MQTT Tray\bin\Debug\Newtonsoft.Json.xml

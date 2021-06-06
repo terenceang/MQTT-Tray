@@ -7,9 +7,13 @@ using MQTTnet.ManagedClient;
 using System.Management;
 using System.Text.RegularExpressions;
 using System.Drawing;
+using Microsoft.Win32;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace MQTT_Tray
 {
+
     public partial class Form1 : Form
     {
         bool configured = false;
@@ -75,7 +79,6 @@ namespace MQTT_Tray
         private bool Load_Setting()
         {
             {
-
                 //Default Port = 1883
                 if (Properties.Settings.Default.MQTT_Port != "")
                 {
@@ -87,6 +90,20 @@ namespace MQTT_Tray
 
                 Chk_ACBoot.Checked = Properties.Settings.Default.ACBoot;
                 Chk_ACshutdown.Checked = Properties.Settings.Default.ACShutdown;
+
+                ck1_startup.Checked = Properties.Settings.Default.Startup;
+
+                /*                RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                                if (!ck1_startup.Checked)
+                                {
+                                   // registryKey.SetValue("MQTT_Tray", Application.ExecutablePath);
+                                }
+                                else
+                                {
+                                   // registryKey.DeleteValue("MQTT_Tray",false);
+                                }
+
+                                registryKey.Close();*/
 
                 //Validate
 
@@ -116,7 +133,7 @@ namespace MQTT_Tray
                     }
                 }
 
-                if ( Properties.Settings.Default.MQTT_User == "")
+                if (Properties.Settings.Default.MQTT_User == "")
                 {
                     TB_User.BackColor = Color.Red;
                     config = false;
@@ -153,7 +170,7 @@ namespace MQTT_Tray
 #if DEBUG
             Console.WriteLine("Power On");
 #else
-            await mqttClient.PublishAsync(new MqttApplicationMessageBuilder().WithTopic("/"+ TB_DevID.Text +"/ac_power").WithPayload("1").Build());
+            await mqttClient.PublishAsync(new MqttApplicationMessageBuilder().WithTopic("cmnd/" + TB_DevID.Text + "/mode").WithPayload("cool").Build());
 #endif
         }
 
@@ -164,7 +181,7 @@ namespace MQTT_Tray
 #if DEBUG
             Console.WriteLine("Power Off");
 #else
-            await mqttClient.PublishAsync(new MqttApplicationMessageBuilder().WithTopic("/"+ TB_DevID.Text +"/ac_power").WithPayload("0").Build());
+            await mqttClient.PublishAsync(new MqttApplicationMessageBuilder().WithTopic("cmnd/" + TB_DevID.Text + "/mode").WithPayload("off").Build());
 #endif
         }
 
@@ -202,7 +219,7 @@ namespace MQTT_Tray
                         .WithKeepAlivePeriod(TimeSpan.FromSeconds(120)).Build())
                     .Build();
 
-                await mqttClient.SubscribeAsync(new TopicFilterBuilder().WithTopic("/"+ TB_DevID.Text +"/status/#").Build());
+                await mqttClient.SubscribeAsync(new TopicFilterBuilder().WithTopic("tele/" + TB_DevID.Text + "/#").Build());
                 await mqttClient.StartAsync(options);
 
                 if (Chk_ACBoot.Checked)
@@ -226,16 +243,34 @@ namespace MQTT_Tray
                     notifyIcon1.Text = "Disconnected";
                 };
 
-
+                //             
                 mqttClient.ApplicationMessageReceived += (s, ev) =>
                 {
-                    Console.WriteLine("### RECEIVED APPLICATION MESSAGE ###");
-                    Console.WriteLine($"+ Topic = {ev.ApplicationMessage.Topic}");
-                    Console.WriteLine($"+ Payload = {Encoding.UTF8.GetString(ev.ApplicationMessage.Payload)}");
-                    Console.WriteLine($"+ QoS = {ev.ApplicationMessage.QualityOfServiceLevel}");
-                    Console.WriteLine($"+ Retain = {ev.ApplicationMessage.Retain}");
-                    Console.WriteLine();
+
+#if DEBUG
+                    string json_string = "{'model':0,'power':0,'mode':'off','temp':23,'fan':'auto','vSwing':15,'hSwing':13,'quiet':0,'powerful':0,'clock':0,'onTimer':0,'offTimer':0}";
+                    dynamic Payload = JsonConvert.DeserializeObject(json_string); 
+
+                     Console.WriteLine("### RECEIVED APPLICATION MESSAGE ###");
+                     Console.WriteLine($"+ Topic = {ev.ApplicationMessage.Topic}");
+                     Console.WriteLine($"+ Payload = {Encoding.UTF8.GetString(ev.ApplicationMessage.Payload)}");
+                     Console.WriteLine($"+ QoS = {ev.ApplicationMessage.QualityOfServiceLevel}");
+                     Console.WriteLine($"+ Retain = {ev.ApplicationMessage.Retain}");
+                     Console.WriteLine();
+
+#else
+                    dynamic Payload = JsonConvert.DeserializeObject(Encoding.UTF8.GetString(ev.ApplicationMessage.Payload));
+#endif
+                    if (Payload.power == "1")
+                    {
+                        notifyIcon1.Icon = Properties.Resources.PowerOn;
+                    }
+                    else
+                    {
+                        notifyIcon1.Icon = Properties.Resources.PowerOff;
+                    }
                 };
+
             }
         }
 
@@ -251,6 +286,7 @@ namespace MQTT_Tray
             Properties.Settings.Default.MQTT_Password = TB_Password.Text;
             Properties.Settings.Default.ACBoot = Chk_ACBoot.Checked;
             Properties.Settings.Default.ACShutdown = Chk_ACshutdown.Checked;
+            Properties.Settings.Default.Startup = ck1_startup.Checked;
             Properties.Settings.Default.Save();
 
             if (Load_Setting())
@@ -322,5 +358,27 @@ namespace MQTT_Tray
                 PowerOffAsync();
             }
         }
+
+
+        private void ck1_startup_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Startup = ck1_startup.Checked;
+            Properties.Settings.Default.Save();
+
+            RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            string startmenu = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\Programs\\MQTT Tray\\MQTT Tray.appref-ms";
+
+            if (ck1_startup.Checked)
+            {
+                // if (registryKey.GetValue("MQTT_Tray") == null) registryKey.SetValue("MQTT_Tray", Application.ExecutablePath);
+                // C: \Users\teren\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MQTT Tray
+                registryKey.SetValue("MQTT_Tray", startmenu);
+            }
+            else
+            {
+                registryKey.DeleteValue("MQTT_Tray", false);
+            }
+        }
+
     }
 }
